@@ -1,0 +1,21 @@
+.contact {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 30px;
+}
+.contact__link {
+  display: inline-flex;
+  align-items: center;
+  padding: 32px 0;
+  transition: color var(--time);
+
+  &:hover,
+  &:focus {
+  color: var(--acent);
+  }
+}
+.contact__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
