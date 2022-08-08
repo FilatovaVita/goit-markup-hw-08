@@ -1,0 +1,22 @@
+
+.title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--text-color-title);
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  color: var(--text-color-title);
+}
+
+.title--footer {
+  margin-bottom: 20px;
+  color: var(--white);
+}
