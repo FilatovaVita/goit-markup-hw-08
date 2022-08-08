@@ -1,0 +1,24 @@
+.work {
+  padding-bottom: 94px;
+}
+.work__item {
+  position: relative;
+  flex-basis: calc((100% - var(--indent) * 2) / 3);
+}
+.work__overlay {
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.work__dsc {
+  padding: 27px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white);
+}
