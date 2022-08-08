@@ -1,0 +1,13 @@
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--backg-grey);
+}
+.team__dsc {
+  margin-bottom: 16px;
+}
+.team__item {
+  flex-basis: calc((100% - var(--indent) * 3) / 4);
+  line-height: calc(19 / 16);
+  background-color: var(--white);
+}
