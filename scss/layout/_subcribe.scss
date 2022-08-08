@@ -1,0 +1,53 @@
+.subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 93px;
+}
+
+.subscribe__input {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  outline: transparent;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: transparent;
+  color: var(--white);
+  transition: border-color var(--time);
+
+  &:hover,
+  &:focus {
+  border-color: var(--acent);
+  }
+}
+
+.subscribe__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 200px;
+  min-height: 48px;
+  padding: 10px 28px;
+  border: 0.5px solid transparent;
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: var(--white);
+  background-color: var(--acent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: background-color var(--time);
+
+  &:hover,
+  &:focus {
+  background-color: #188CE8;
+  }
+}
+.subscribe__icon {
+  fill: var(--white);
+}
