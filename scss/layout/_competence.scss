@@ -1,0 +1,15 @@
+.competence {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.competence__list {
+  flex-wrap: nowrap;
+  padding-bottom: 0;
+}
+.competence__item {
+  flex-basis: calc((100% - var(--indent) * 3) / 4);
+}
+.competence__icon {
+  width: 70px;
+  height: 70px;
+}
