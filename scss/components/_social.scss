@@ -1,0 +1,36 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+  transition: color var(--time), background-color var(--time);
+
+  &:hover,
+  &:focus {
+  color: var(--white);
+  background-color: var(--acent);
+  }
+}
+
+.social__link--footer {
+  color: var(--white);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color var(--time);
+
+  &--footer:hover,
+  &--footer:focus {
+  background-color: var(--acent);
+  }
+}
+.social__icon {
+  fill: currentColor;
+}
