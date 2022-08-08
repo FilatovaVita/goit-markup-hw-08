@@ -1,0 +1,23 @@
+.address-content {
+  margin-right: 70px;
+}
+.address__list {
+  width: 231px;
+}
+.addres__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__link {
+  font-style: normal;
+  color: var(--adress-color);
+  transition: color var(--time);
+
+  &--white {
+  color: var(--white);
+  }
+  &:hover,
+  &:focus {
+  color: var(--acent);
+  }
+}
