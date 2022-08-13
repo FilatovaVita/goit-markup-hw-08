@@ -1,21 +1,49 @@
 .contact {
   display: flex;
-  align-items: center;
-  margin-left: auto;
-  gap: 30px;
+  flex-direction: column-reverse;
+  
+   @media screen and (min-width: 1200px) {
+    align-items: center;
+    margin-left: auto;
+    gap: 30px;
+  }
 }
 .contact__link {
   display: inline-flex;
   align-items: center;
-  padding: 32px 0;
+  padding-bottom: 64px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(28/24);
+  letter-spacing: 0.02em;
   transition: color var(--time);
+
+  &--menu {
+    font-size: 34px;
+    line-height: calc(40/34);
+    color: #2196F3;
+    padding-bottom: 32px;
+  }
 
   &:hover,
   &:focus {
   color: var(--acent);
   }
+
+  @media screen and (min-width: 1200px) {
+    padding: 32px 0;
+  }
 }
 .contact__icon {
-  fill: currentColor;
-  margin-right: 10px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-right: 8px;
+    fill: currentColor;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
 }
