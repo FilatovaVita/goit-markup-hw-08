@@ -23,7 +23,10 @@
 .agreement__checkbox:focus + .agreement__icon .agreement__icon--uncheck{
  fill: var(--acent)
 }
-
+.agreement__label {
+  font-size: 12px;
+  line-height: calc(14/12);
+}
 .agreement__btn {
   display: inline-flex;
   text-align: center;
