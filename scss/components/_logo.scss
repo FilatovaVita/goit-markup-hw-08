@@ -1,10 +1,10 @@
 .logo {
-  margin-right: 93px;
+  
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
+  font-size: 24px;
+  line-height: calc(28 / 24);
   color: var(--acent);
 }
 
@@ -12,6 +12,7 @@
   color: var(--black-acent);
 }
 .logo--footer {
+  width: 154px;
   display: inline-block;
   margin-right: 0;
   margin-bottom: 20px;
@@ -20,3 +21,6 @@
 .logo__acent--footer{
   color: var(--white);
 }
+// font-size: 26px;
+// line-height: calc(31 / 26);
+// margin-right: 93px;
