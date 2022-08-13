@@ -1,6 +1,13 @@
 .portfolio-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.portfolio__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--indent);
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .portfolio__item {
   flex-basis: calc((100% - var(--indent) * 2) / 3);
