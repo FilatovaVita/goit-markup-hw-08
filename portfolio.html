@@ -20,28 +20,55 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="header">
-      <div class="container header-container">
-        <a class="logo" href="./index.html">Web<span class="logo__acent">Studio</span></a>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link" href="./index.html">Студия</a></li>
-            <li class="nav__item"><a class="nav__link nav__link--current" href="./portfolio.html">Портфолио</a></li>
-            <li class="nav__item"><a class="nav__link" href="/">Контакты</a></li>
-          </ul>
-        </nav>
-        <ul class="contact">
-          <li class="contact__item">
-            <a class="contact__link" href="mailto:info@devstudio.com">
-              <svg class="contact__icon" width="16" height="12"><use href="./image/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a>
-          </li>
-          <li class="contact__item">
-            <a class="contact__link" href="tel:+38-096-111-11-11">
-              <svg class="contact__icon" width="10" height="16"><use href="./image/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </div>
-    </header>
+      <header class="header">
+        <div class="container header-container">
+          <a class="logo" href="./index.html">Web<span class="logo__acent">Studio</span></a>
+      
+          <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+            <svg class="menu-button__icon" width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use class="icon-menu-close" href="./image/icons.svg#icon-close-black-18dp-2-1"></use>
+              <use class="icon-menu-open" href="./image/icons.svg#icon-menu_24px"></use>
+            </svg>
+          </button>
+          <div class="menu-container" id="menu-container" data-menu>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link nav__link--current" href="./index.html">Студія</a></li>
+                <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфоліо</a></li>
+                <li class="nav__item"><a class="nav__link" href="/">Контакти</a></li>
+              </ul>
+            </nav>
+            <ul class="contact">
+              <li class="contact__item">
+                <a class="contact__link" href="mailto:info@devstudio.com">
+                  <svg class="contact__icon" width="16" height="12">
+                    <use href="./image/icons.svg#icon-envelope"></use>
+                  </svg>info@devstudio.com</a>
+              </li>
+              <li class="contact__item">
+                <a class="contact__link contact__link--menu" href="tel:+38-096-111-11-11">
+                  <svg class="contact__icon" width="10" height="16">
+                    <use href="./image/icons.svg#icon-smartphone"></use>
+                  </svg>+38 096 111 11 11</a>
+              </li>
+            </ul>
+            <ul class="header-social__list">
+              <li class="header-social__item" lang="en">
+                <a class="header-social__link" href="">Instagram</a>
+              </li>
+              <li class="header-social__item" lang="en">
+                <a class="header-social__link" href="">Twitter</a>
+              </li>
+              <li class="header-social__item" lang="en">
+                <a class="header-social__link" href="">Facebook</a>
+              </li>
+              <li class="header-social__item" lang="en">
+                <a class="header-social__link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
     <main>
     <!-- MAIN section  -->
       <section class="portfolio-section">
@@ -55,7 +82,7 @@
             <li><button class="filter__btn" type="button">Маркетинг</button></li>
           </ul>
     <!-- Portfolio cards -->
-          <ul class="portfolio card">
+          <ul class="portfolio__list">
             <li class="portfolio__item">
               <a class="portfolio__link" href=""> 
                 <div class=portfolio-img-wrap> <img 
@@ -272,5 +299,6 @@
         </div>
       </div>
     </footer>
+    <script src="./menu.js"></script>
   </body>
 </html>
