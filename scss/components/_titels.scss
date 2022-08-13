@@ -6,14 +6,22 @@
   line-height: calc(16 / 14);
   text-transform: uppercase;
   color: var(--text-color-title);
+  
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
 }
 .section-title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   color: var(--text-color-title);
+
+  @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
 }
 
 .title--footer {
