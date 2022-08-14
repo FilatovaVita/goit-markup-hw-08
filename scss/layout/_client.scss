@@ -12,6 +12,11 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: var(--indent);
+  
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+
 }
 .client__link {
   display: flex;
@@ -28,6 +33,10 @@
   &:focus {
   color: var(--acent);
   border-color: var(--acent);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }
 .client__icon {
