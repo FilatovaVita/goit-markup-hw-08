@@ -1,4 +1,6 @@
 .nav__list {
+  display: flex;
+  flex-direction: column;
   font-weight: 500;
   font-size: 40px;
   line-height: calc(47 / 40);
@@ -6,7 +8,7 @@
   color: var(--text-color-title);
 
   @media screen and (min-width: 768px) {
-    display: flex;
+    flex-direction: row;
     gap: 50px;
     font-size: 14px;
     line-height: calc(16 / 14);
