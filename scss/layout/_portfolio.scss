@@ -4,14 +4,25 @@
 }
 .portfolio__list {
   display: flex;
-  flex-direction: column;
   gap: var(--indent);
   flex-wrap: wrap;
   justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+  }
 }
 .portfolio__item {
-  flex-basis: calc((100% - var(--indent) * 2) / 3);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - var(--indent)) / 2);
+  }
+  
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - var(--indent) * 2) / 3);
+  }
 }
+  
 .portfolio__discription {
   font-size: 16px;
   line-height: calc(30 / 16);
