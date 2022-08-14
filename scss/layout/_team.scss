@@ -8,6 +8,12 @@
       padding-bottom: 94px;
     }
 }
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--indent);
+}
 .team__dsc {
   font-size: 16px;
   line-height: calc(19/16);
@@ -23,6 +29,5 @@
   @media screen and (min-width: 1200px) {
       flex-basis: calc((100% - var(--indent) * 3) / 4);
   }
+} 
  
- 
-}
