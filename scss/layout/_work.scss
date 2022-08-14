@@ -6,6 +6,12 @@
     display: none;
   }
 }
+.work__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--indent);
+}
 .work__item {
   position: relative;
   flex-basis: calc((100% - var(--indent) * 2) / 3);
