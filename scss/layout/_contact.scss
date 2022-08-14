@@ -1,8 +1,15 @@
 .contact {
   display: flex;
   flex-direction: column-reverse;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
   
-   @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
     align-items: center;
     margin-left: auto;
     gap: 30px;
@@ -18,18 +25,25 @@
   letter-spacing: 0.02em;
   transition: color var(--time);
 
-  &--menu {
+  @media screen and (min-width: 480px) {
+   &--menu {
     font-size: 34px;
     line-height: calc(40/34);
     color: #2196F3;
     padding-bottom: 32px;
+   }
   }
+  
 
   &:hover,
   &:focus {
   color: var(--acent);
   }
-
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0;
+    font-size: 12px;
+    line-height: calc(14/12);
+  }
   @media screen and (min-width: 1200px) {
     padding: 32px 0;
   }
