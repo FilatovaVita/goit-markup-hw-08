@@ -1,8 +1,18 @@
 .address-content {
   text-align: center;
   padding-bottom: 60px;
-  // margin-right: 70px;
+  
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+    margin-right: 70px;
+  }
 }
+
 .address__list {
   width: 231px;
 }
