@@ -6,7 +6,13 @@
   justify-content: flex-start;
   gap: 8px;
   row-gap: 15px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+    
 }
+
 .filter__btn {
   padding: 6px 22px;
   border-radius: 4px;
