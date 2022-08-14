@@ -3,7 +3,12 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  // margin-left: 93px;
+  
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    align-items: flex-start;
+  }
 }
 
 .subscribe__input {
@@ -22,6 +27,12 @@
   &:hover,
   &:focus {
   border-color: var(--acent);
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    margin-right: 10px;
+    width: 358px;
   }
 }
 
