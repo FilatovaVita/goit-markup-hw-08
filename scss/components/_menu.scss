@@ -43,9 +43,6 @@
     transform: translateX(100%);
     transition: transform var(--time);
 
-    &.is-open {
-        transform: translateX(0);
-    }
 
     @media screen and (max-width: 767px) {
         display: none;
@@ -59,14 +56,12 @@
         overflow: scroll;
 
         &.is-open {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: auto;
+         display: flex;
+         flex-direction: column;
+         transform: translateX(0);
         }
     }
-
-    @media screen and (min-width: 768px) {
-       
-        
+    @media screen and (min-width: 767px) {
+     
     }
 }
