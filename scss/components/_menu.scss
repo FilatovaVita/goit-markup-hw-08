@@ -37,14 +37,9 @@
 }
 
 .menu-container {
-    z-index: 1000;
-    display: flex;
-    background-color: var(--white);
-    transform: translateX(100%);
-    transition: transform var(--time);
 
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
         display: none;
         position: fixed;
         top: 0;
@@ -54,6 +49,9 @@
         z-index: 999;
         padding: 48px 40px;
         overflow: scroll;
+        background-color: var(--white);
+        transform: translateX(100%);
+        transition: transform var(--time);
 
         &.is-open {
          display: flex;
@@ -62,6 +60,7 @@
         }
     }
     @media screen and (min-width: 767px) {
-     
+        display: flex;
+        
     }
 }
