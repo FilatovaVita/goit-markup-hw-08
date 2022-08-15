@@ -33,13 +33,18 @@
 }
 
 body {
-  padding-top: 70px;
+  padding-top: 80px;
   color: var(--text-color);
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
+}
+@media screen and (max-width: 480px) {
+  body {
+    padding-top: 0;
+  }
 }
 
 .no-scroll {
@@ -268,7 +273,6 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-top: 60px;
   margin-bottom: 40px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -396,7 +400,6 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 16px 0;
   background-color: var(--white);
   border-bottom: 1px solid #ececec;
 }
@@ -575,6 +578,12 @@ img {
 .portfolio-section {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio__list {
