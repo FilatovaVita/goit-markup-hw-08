@@ -1,10 +1,15 @@
 .nav {
   display: flex;
   margin-bottom: auto;
+
+  @media screen and (min-width: 768px) {
+   margin-right: 90px;
+  }
 }
 .nav__list {
   display: flex;
   flex-direction: column;
+  gap: 50px;
   font-weight: 500;
   font-size: 40px;
   line-height: calc(47 / 40);
@@ -13,19 +18,19 @@
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    gap: 50px;
     font-size: 14px;
     line-height: calc(16 / 14);
-    margin-left: auto;
   }
-
 }
-
 .nav__link {
   display: inline-flex;
   align-items: center;
-  padding-bottom: 32px;
   transition: color var(--time);
+
+  &--current {
+    position: relative;
+    color: var(--acent);
+  }
 
   &:hover,
   &:focus {
@@ -36,10 +41,7 @@
    & {
     padding: 32px 0;
    }
-   &--current {
-   position: relative;
-   color: var(--acent);
-   }
+  
    &--current:after {
    content: '';
    position: absolute;
