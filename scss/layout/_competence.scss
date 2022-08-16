@@ -28,7 +28,7 @@
   }
   
   @media screen and (min-width: 1200px) {
-      flex-basis: calc((100% - var(--indent) * 3) / 4);
+    flex-basis: calc((100% - var(--indent) * 3) / 4);
   }
 }
 .competence__icon {
