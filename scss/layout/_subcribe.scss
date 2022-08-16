@@ -29,6 +29,9 @@
   &:focus {
   border-color: var(--acent);
   }
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
