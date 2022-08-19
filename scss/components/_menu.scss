@@ -22,6 +22,10 @@
     &__icon {
         fill: currentColor;
     }
+    &__icon:focus,
+    &__icon:hover {
+        fill: var(--acent);
+    }
 }
 
 .menu-button .icon-menu-close {
@@ -47,7 +51,7 @@
         width: 100%;
         height: 100%;
         z-index: 999;
-        padding: 48px 40px;
+        padding: 40px;
         overflow: scroll;
         background-color: var(--white);
         transform: translateX(100%);
