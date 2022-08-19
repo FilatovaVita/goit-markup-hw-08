@@ -27,6 +27,12 @@
   letter-spacing: 0.02em;
   transition: color var(--time);
 
+  @media screen and (max-width: 420px) {
+    
+    font-size: 12px;
+    line-height: calc(14 / 12);
+  }
+
   @media screen and (max-width: 768px) {
    &--menu {
     font-size: 34px;
@@ -34,6 +40,12 @@
     color: #2196F3;
     padding-bottom: 32px;
    }
+  }
+  @media screen and (max-width: 420px) {
+    &--menu {
+      font-size: 16px;
+      line-height: calc(18 / 16);
+  }
   }
   
   &:hover,
@@ -47,6 +59,8 @@
   }
   @media screen and (min-width: 1200px) {
     padding: 32px 0;
+    font-size: 14px;
+    line-height: calc(16/14);
   }
 }
 .contact__icon {
