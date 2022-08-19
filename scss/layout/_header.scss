@@ -24,6 +24,10 @@
   padding: 0;
   display: flex;
  
+  @media screen and (max-width: 480px) {
+    flex-wrap: wrap;
+
+  }
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -43,4 +47,10 @@
   font-size: 18px;
   line-height: calc(22 / 18);
   text-decoration: none;
+
+  @media screen and (max-width: 420px) {
+    flex-wrap: wrap;
+    font-size: 16px;
+    line-height: calc(18 / 16);
+  }
 }
