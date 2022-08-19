@@ -1,6 +1,10 @@
 .portfolio-section {
-  padding-top: 60px;
+  padding-top: 100px;
   padding-bottom: 60px;
+  @media screen and (min-width: 786px) {
+    padding-top: 60px;
+    
+  }
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -87,8 +91,10 @@
   line-height: calc(28 / 18);
   letter-spacing: 0.03em;
   color: var(--white);
-  text-align: center;
   user-select: none;
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+  }
 }
 
 
