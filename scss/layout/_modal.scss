@@ -10,6 +10,17 @@
   background-color: var(--white);
   opacity: 1;
   transition: transform 400ms ease-in 200ms, opacity 400ms ease-in 200ms;
+
+  @media screen and (max-width: 425px) {
+    padding: 20px;
+    width: 300px;
+    height: 680px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal__btn {
   position: absolute;
