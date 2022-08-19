@@ -16,6 +16,12 @@
   letter-spacing: 0.02em;
   color: var(--text-color-title);
 
+  @media screen and (max-width: 420px) {
+    
+    font-size: 16px;
+    line-height: calc(18 / 16);
+  }
+
   @media screen and (min-width: 768px) {
     flex-direction: row;
     font-size: 14px;
