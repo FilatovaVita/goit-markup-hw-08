@@ -12,9 +12,10 @@
   transition: transform 400ms ease-in 200ms, opacity 400ms ease-in 200ms;
 
   @media screen and (max-width: 425px) {
+    top: 55%;
     padding: 20px;
     width: 300px;
-    height: 680px;
+    height: 500px;
   }
 
   @media screen and (min-width: 1200px) {
