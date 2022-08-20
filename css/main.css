@@ -450,6 +450,11 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (max-width: 768px) {
+  .header-container {
+    height: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .header-container {
     -webkit-box-pack: start;
@@ -465,12 +470,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-@media screen and (max-width: 480px) {
-  .header-social__list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
 }
 @media screen and (min-width: 768px) {
   .header-social__list {
@@ -494,10 +493,8 @@ img {
 }
 @media screen and (max-width: 420px) {
   .header-social__link {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    font-size: 16px;
-    line-height: 1.125;
+    font-size: 10px;
+    line-height: 0.8333333333;
   }
 }
 
@@ -530,8 +527,8 @@ img {
 }
 @media screen and (max-width: 420px) {
   .nav__list {
-    font-size: 16px;
-    line-height: 1.125;
+    font-size: 18px;
+    line-height: 1.2222222222;
   }
 }
 @media screen and (min-width: 768px) {
@@ -589,8 +586,18 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(transparent)), url(../image/hero@1x_mobile.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), transparent), url(../image/hero@1x_mobile.jpg);
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(transparent)), url(../image/hero@1x_mobile.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), transparent), url(../image/hero@1x_mobile.jpg);
+  }
+}
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(transparent)), url(../image/hero@2x_mobile.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), transparent), url(../image/hero@2x_mobile.jpg);
+  }
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -1094,9 +1101,10 @@ img {
 }
 @media screen and (max-width: 425px) {
   .modal {
+    top: 55%;
     padding: 20px;
     width: 300px;
-    height: 680px;
+    height: 500px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1233,6 +1241,12 @@ img {
   letter-spacing: 0.03em;
   color: var(--text-color-title);
 }
+@media screen and (max-width: 425px) {
+  .form__title {
+    font-size: 16px;
+    line-height: 1.125;
+  }
+}
 
 .form__wrap {
   position: relative;
@@ -1276,6 +1290,11 @@ img {
   height: 120px;
   padding-left: 16px;
   resize: none;
+}
+@media screen and (max-width: 425px) {
+  .form__input:last-child {
+    height: 60px;
+  }
 }
 .form__input::-webkit-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
@@ -1399,8 +1418,8 @@ img {
 }
 @media screen and (max-width: 420px) {
   .contact__link {
-    font-size: 12px;
-    line-height: 1.1666666667;
+    font-size: 18px;
+    line-height: 1.2222222222;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1413,8 +1432,8 @@ img {
 }
 @media screen and (max-width: 420px) {
   .contact__link--menu {
-    font-size: 16px;
-    line-height: 1.125;
+    font-size: 18px;
+    line-height: 1.2222222222;
   }
 }
 .contact__link:hover, .contact__link:focus {
@@ -1467,6 +1486,12 @@ img {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+@media screen and (max-width: 425px) {
+  .agreement {
+    gap: 3px;
+    margin-bottom: 15px;
+  }
 }
 
 .agreement__link {
