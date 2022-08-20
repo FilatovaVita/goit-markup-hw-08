@@ -10,6 +10,11 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color-title);
+
+  @media screen and (max-width: 425px) {
+    font-size: 16px;
+    line-height: calc(18/16);
+  }
 }
 .form__wrap {
   position: relative;
@@ -49,6 +54,10 @@
   height: 120px;
   padding-left: 16px;
   resize: none;
+
+  @media screen and (max-width: 425px) {
+    height: 60px;
+  }
   }
   &::placeholder {
     color: rgba(117, 117, 117, 0.5);
