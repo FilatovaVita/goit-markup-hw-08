@@ -5,6 +5,11 @@
   gap: 7px;
   margin-bottom: 30px;
   user-select: none;
+
+  @media screen and (max-width: 425px) {
+    gap: 3px;
+    margin-bottom: 15px;
+  }
 }
 .agreement__link {
   text-decoration: underline;
@@ -23,6 +28,7 @@
 .agreement__checkbox:focus + .agreement__icon .agreement__icon--uncheck{
  fill: var(--acent)
 }
+
 .agreement__label {
   font-size: 12px;
   line-height: calc(14/12);
